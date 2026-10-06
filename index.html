@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Floracion Curated: The Kitchen Edit — a hand-picked selection of stoneware for slow Sundays, oven-to-table hosting and elevated table styling. Collection in Douglasdale." />
+  <title>Floracion Curated · The Kitchen Edit — Slow Sundays</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Lenis smooth scroll + GSAP from CDN -->
+  <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.1.13/bundled/lenis.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       Header / Nav
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="#top" class="logo" aria-label="Floracion Curated — The Kitchen Edit">
+        <span class="logo-primary">Floracion <span class="logo-accent">Curated</span></span>
+        <span class="logo-tagline">The Kitchen Edit</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <span data-magnetic="0.15"><a href="#collection" class="link-underline">The Edit</a></span>
+        <span data-magnetic="0.15"><a href="#story" class="link-underline">Why this piece</a></span>
+        <span data-magnetic="0.15"><a href="#details" class="link-underline">Details</a></span>
+        <span data-magnetic="0.15"><a href="#contact" class="link-underline">Enquire</a></span>
+      </nav>
+
+      <span data-magnetic="0.25" style="display:none; border-radius:9999px" id="whatsapp-link-nav-wrap">
+        <a id="whatsapp-link-nav" href="#" target="_blank" rel="noreferrer" class="btn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         Hero
+         ============================================================ -->
+    <section id="top" class="hero grain">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="eyebrow">The Kitchen Edit · No. 01</div>
+
+          <h1>
+            <span class="block" data-split-line="Stoneware,"></span>
+            <span class="block italic" data-split-line="curated for slow Sundays."></span>
+          </h1>
+
+          <p class="hero-sub">
+            Floracion's hand-picked selection of cream-white Italian stoneware —
+            chosen for the oven-to-table ritual. For the Sunday roast, the long
+            lunch, the friends who stay past coffee.
+          </p>
+
+          <div class="hero-cta-row">
+            <span data-magnetic="0.25" style="display:inline-block; border-radius:9999px">
+              <a href="#" id="whatsapp-link-hero" target="_blank" rel="noreferrer"
+                class="btn btn-primary shimmer-cta-light">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                </svg>
+                Chat on WhatsApp
+              </a>
+            </span>
+            <a href="#collection" class="link-underline" style="font-size:0.875rem; color:rgba(35,46,36,0.8)">View the
+              edit →</a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <div class="stat-num">Curated</div>
+              <div class="stat-label">By Floracion</div>
+            </div>
+            <div>
+              <div class="stat-num">Oven-to-table</div>
+              <div class="stat-label">Oven · microwave · DW</div>
+            </div>
+            <div>
+              <div class="stat-num">Delivered</div>
+              <div class="stat-label">Douglasdale &amp; Fourways</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-wrap" data-tilt data-tilt-max="5">
+            <img src="./images/smeg-hero.jpg" alt="Cream white Italian stoneware dish on a warm terracotta counter"
+              loading="eager" />
+            <div class="hero-tag">Cream white</div>
+            <div class="hero-price">
+              <span class="from">from</span>
+              <span class="price">R 350</span>
+            </div>
+          </div>
+
+          <div class="hero-floating-card">
+            <div class="label">Made for</div>
+            <p>Roast chicken, butternut lasagne, crumble on a Sunday.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Marquee
+         ============================================================ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+
+    <!-- ============================================================
+         Brand showcase (SMEG mark + Floracion story)
+         ============================================================ -->
+    <section class="brand-section" id="brand">
+      <div class="container brand-grid">
+        <div class="brand-mark-wrap">
+          <div class="brand-mark">
+            <!-- SMEG flower mark (sage badge + charcoal circles + sage star cutout) -->
+            <svg id="brand-mark" class="smeg-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+              aria-label="SMEG mark">
+              <rect class="badge" x="0" y="0" width="100" height="100" rx="18" fill="#5b6b4f" />
+              <g class="circles">
+                <circle cx="30" cy="30" r="20" class="circle" />
+                <circle cx="70" cy="30" r="20" class="circle" />
+                <circle cx="30" cy="70" r="20" class="circle" />
+                <circle cx="70" cy="70" r="20" class="circle" />
+              </g>
+              <path class="star" d="M50 28 L56 44 L72 50 L56 56 L50 72 L44 56 L28 50 L44 44 Z" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="brand-copy">
+          <div class="eyebrow">The curation</div>
+          <div class="brand-word">
+            <svg class="smeg-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect class="badge" x="0" y="0" width="100" height="100" rx="18" fill="#5b6b4f" />
+              <g>
+                <circle cx="30" cy="30" r="20" class="circle" />
+                <circle cx="70" cy="30" r="20" class="circle" />
+                <circle cx="30" cy="70" r="20" class="circle" />
+                <circle cx="70" cy="70" r="20" class="circle" />
+              </g>
+              <path class="star" d="M50 28 L56 44 L72 50 L56 56 L50 72 L44 56 L28 50 L44 44 Z" />
+            </svg>
+          </div>
+          <p class="primary">
+            Floracion is an independent interior design consultancy. We curate
+            specific pieces because they align with our aesthetic and functional
+            standards for the home — we are not an official SMEG representative.
+          </p>
+          <p class="secondary">
+            The cream-white stoneware in The Kitchen Edit carries the quiet
+            confidence of SMEG's Italian design heritage: heavy in the hand,
+            gentle on the eye, never trying too hard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Collection (product cards)
+         ============================================================ -->
+    <section id="collection" class="collection-section">
+      <div class="container">
+
+        <div class="section-head" id="collection-head">
+          <div class="head-left">
+            <div class="eyebrow">The Kitchen Edit · No. 01</div>
+            <h2>Two pieces. <span class="italic">A lifetime</span> of slow Sundays.</h2>
+          </div>
+          <div class="head-right">
+            <p>Floracion's hand-picked selection — cream-white Italian stoneware,
+              chosen for its weight, its finish, and the way it moves from the
+              oven, to the table, to the conversation.</p>
+          </div>
+        </div>
+
+        <div class="products" id="products">
+
+          <!-- Product 1: Rectangular -->
+          <article class="product" data-product>
+            <div class="product-media">
+              <div class="product-img-wrap" data-img-wrap data-tilt data-tilt-max="6">
+                <img src="./images/smeg-rectangular.jpg" alt="Cream white Italian stoneware rectangular baking dish"
+                  loading="lazy" />
+                <div class="product-tag">Cream White</div>
+                <div class="product-tag-bottom">
+                  <div class="num">01</div>
+                  <div class="name">Rectangular Dish</div>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="eyebrow">The Edit · No. 01</div>
+              <h3>The Rectangular Dish</h3>
+              <p class="desc">Generous and grounding. A curation staple — sized for the Sunday roast, or for that one
+                lasagne that quietly becomes everyone's favourite.</p>
+              <ul>
+                <li>Perfect for roasts &amp; lasagne</li>
+                <li>Oven, microwave &amp; dishwasher safe</li>
+                <li>Hand-finished cream-white glaze</li>
+                <li>No lid included — designed as open oven-to-tableware</li>
+              </ul>
+              <div class="product-foot">
+                <div>
+                  <div class="price-label">Curated price</div>
+                  <div class="price">R 450</div>
+                </div>
+                <span data-magnetic="0.25" style="display:inline-block; border-radius:9999px">
+                  <a href="#" class="btn whatsapp-cta">
+                    Chat on WhatsApp
+                    <span class="arrow">→</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <div class="product-divider"></div>
+
+          <!-- Product 2: Square (reversed on desktop) -->
+          <article class="product reverse" data-product>
+            <div class="product-media">
+              <div class="product-img-wrap" data-img-wrap data-tilt data-tilt-max="6">
+                <img src="./images/smeg-square.jpg" alt="Cream white Italian stoneware square baking dish"
+                  loading="lazy" />
+                <div class="product-tag">Cream White</div>
+                <div class="product-tag-bottom">
+                  <div class="num">02</div>
+                  <div class="name">Square Dish</div>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="eyebrow">The Edit · No. 02</div>
+              <h3>The Square Dish</h3>
+              <p class="desc">Compact, considered, quietly versatile. The little one in the curation — for sides, bakes,
+                and the dishes people always ask the name of.</p>
+              <ul>
+                <li>Ideal for baking &amp; sides</li>
+                <li>Oven, microwave &amp; dishwasher safe</li>
+                <li>Pairs beautifully with the Rectangular Dish</li>
+                <li>No lid included — designed as open oven-to-tableware</li>
+              </ul>
+              <div class="product-foot">
+                <div>
+                  <div class="price-label">Curated price</div>
+                  <div class="price">R 350</div>
+                </div>
+                <span data-magnetic="0.25" style="display:inline-block; border-radius:9999px">
+                  <a href="#" class="btn whatsapp-cta">
+                    Chat on WhatsApp
+                    <span class="arrow">→</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Story (sage)
+         ============================================================ -->
+    <section id="story" class="story-section">
+      <div class="story-blob-1"></div>
+      <div class="story-blob-2"></div>
+
+      <div class="container story-grid">
+        <div class="story-copy">
+          <div class="eyebrow">Why this piece</div>
+          <h2>
+            Designed in Italy.<br class="hide-sm" />
+            <span class="italic">Lived in on Sundays.</span>
+          </h2>
+          <p class="primary">
+            This stoneware carries the quiet confidence of Italian design — heavy
+            in the hand, gentle on the eye, and made to be used, not stored away.
+            The kind of dinnerware you reach for first.
+          </p>
+          <p class="secondary">
+            Floracion has curated a small selection for friends and family who'd
+            rather host than scroll. Two pieces. Cream white. No lids, no
+            packaging theatre — just considered design, ready for the table.
+          </p>
+          <div class="story-stats">
+            <div class="stat">
+              <div class="num">Heritage</div>
+              <div class="label">Italian design · est. 1948</div>
+            </div>
+            <div class="stat">
+              <div class="num">Finish</div>
+              <div class="label">A quiet, warm cream</div>
+            </div>
+            <div class="stat">
+              <div class="num">Purpose</div>
+              <div class="label">Oven-to-table living</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-media">
+          <div class="story-img-wrap">
+            <img src="./images/smeg-square.jpg" alt="Cream white stoneware dish styled with linen and herbs"
+              loading="lazy" />
+            <div class="story-quote">
+              <p>"From the oven. To the table. To the conversation."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Details (specs)
+         ============================================================ -->
+    <section id="details" class="details-section">
+      <div class="container-sm">
+        <div class="details-head" id="details-head">
+          <div class="head-left">
+            <div class="eyebrow">Considered details</div>
+            <h2>The fine <span class="italic">details.</span></h2>
+          </div>
+          <div class="head-right">
+            <p>Every piece in this edit has been personally selected for its weight,
+              its glaze, and the way it earns its place at the table. Considered
+              design, ready to be lived with.</p>
+          </div>
+        </div>
+
+        <div class="spec-table" id="spec-table">
+          <div class="spec-row">
+            <div class="label">Colour</div>
+            <div class="value">Cream White</div>
+          </div>
+          <div class="spec-row">
+            <div class="label">Material</div>
+            <div class="value">Hand-finished stoneware</div>
+          </div>
+          <div class="spec-row">
+            <div class="label">Oven safe</div>
+            <div class="value">Yes</div>
+          </div>
+          <div class="spec-row">
+            <div class="label">Microwave safe</div>
+            <div class="value">Yes</div>
+          </div>
+          <div class="spec-row">
+            <div class="label">Dishwasher safe</div>
+            <div class="value">Yes</div>
+          </div>
+          <div class="spec-row">
+            <div class="label">Lid</div>
+            <div class="value">Not included — open oven-to-tableware</div>
+          </div>
+          <div class="spec-row">
+            <div class="label">Heritage</div>
+            <div class="value">Italian design · est. 1948</div>
+          </div>
+          <div class="spec-row">
+            <div class="label">Collection</div>
+            <div class="value">Douglasdale · by appointment</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Contact (CTA)
+         ============================================================ -->
+    <section id="contact" class="contact-section">
+      <div class="container-sm contact-inner">
+
+        <div class="eyebrow">Enquire</div>
+        <h2>One message. <span class="italic">A slow Sunday</span> sorted.</h2>
+        <p class="lede">
+          Drop us a WhatsApp whenever you have a quiet moment — happy to help.
+          Collection is from Douglasdale, and we can arrange delivery to the
+          wider Fourways area too.
+        </p>
+
+        <div class="contact-cta">
+          <span data-magnetic="0.3" style="display:inline-block; border-radius:9999px">
+            <a href="#" id="whatsapp-link-contact" target="_blank" rel="noreferrer"
+              class="btn btn-on-dark shimmer-cta-light">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+              </svg>
+              Chat on WhatsApp
+            </a>
+          </span>
+          <p class="replies">073 599 1166 · replies between work hours</p>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="label">Collection</div>
+            <div class="value">Douglasdale</div>
+            <div class="sub">By friendly appointment</div>
+          </div>
+          <div class="info-card">
+            <div class="label">Delivery</div>
+            <div class="value">Can be arranged</div>
+            <div class="sub">Fourways &amp; surrounds</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       Footer
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-left">
+          <span class="logo">
+            <span class="logo-primary">Floracion <span class="logo-accent">Curated</span></span>
+            <span class="logo-tagline">The Kitchen Edit</span>
+          </span>
+          <span class="dot">·</span>
+          <span>© <span id="year"></span></span>
+        </div>
+        <div class="footer-right">
+          <span class="tagline">For slow Sundays</span>
+          <span class="sep">✦</span>
+          <span>Douglasdale, ZA</span>
+        </div>
+      </div>
+      <p class="footer-disclaimer">
+        Floracion Curated is an independent interior design consultancy.
+        The Kitchen Edit features hand-picked selections curated by Floracion.
+        Floracion is not an official representative or authorised retailer of the SMEG brand.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
